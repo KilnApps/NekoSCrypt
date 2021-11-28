@@ -139,4 +139,4 @@ dist/
 *.background.tiff
 
 genesis.py
-.vscode
+.vscodez
