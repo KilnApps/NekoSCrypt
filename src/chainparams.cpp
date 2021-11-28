@@ -148,16 +148,16 @@ public:
 
         checkpointData = {
             {
-                {  0, uint256S("0xe8df435b636e9a8605500fa8c887d6d3d203cb669ff7327fdcce18b7d6cff02b")},
-                // {  31846, uint256S("0xba7d5c0e6d46f6448253290ce037e13975c13ca9c375ae854b6b2f85044fc0f9")},
-                // {  41300, uint256S("0x8c4e02f6c0d20e856fd7e952a147fee30ce145ca6932a284f354924362d2b408")},
-                // { 500000, uint256S("0x2b7ea20e3899deb9591015b0a5a589b9f6032ab82e018014fafe11637b1a2daf")},
-                // {1000000, uint256S("0xb9e03dffe6b43cac38191d1bbb0d74fec21223e0de052928c96f498ba305f918")},
-                // {1593400, uint256S("0xe97230c788e7240eb325576810fee62f5162905f63a832f15928b88ac6a938c6")},
-                // {1776411, uint256S("0x4f6de194bd2f4580e2ac9337289c7cca348d3f35c9079af2760b288315b82feb")},
-                // {2124270, uint256S("0x4f6de194bd2f4580e2ac9337289c7cca348d3f35c9079af2760b288315b82feb")},
-                // {2745916, uint256S("0x500bc433505075faa45c3dae1eb9d247fef513015573123e41b54abedf30c8d9")},
-                // {3275900, uint256S("0xe29c854a0a54ac2c3f6b97e0416a0a7f17df6f80ecf4fa6eb3faa7ec1fceffb6")},
+                // {  0, uint256S("0xe8df435b636e9a8605500fa8c887d6d3d203cb669ff7327fdcce18b7d6cff02b")},
+                {  31846, uint256S("0xba7d5c0e6d46f6448253290ce037e13975c13ca9c375ae854b6b2f85044fc0f9")},
+                {  41300, uint256S("0x8c4e02f6c0d20e856fd7e952a147fee30ce145ca6932a284f354924362d2b408")},
+                { 500000, uint256S("0x2b7ea20e3899deb9591015b0a5a589b9f6032ab82e018014fafe11637b1a2daf")},
+                {1000000, uint256S("0xb9e03dffe6b43cac38191d1bbb0d74fec21223e0de052928c96f498ba305f918")},
+                {1593400, uint256S("0xe97230c788e7240eb325576810fee62f5162905f63a832f15928b88ac6a938c6")},
+                {1776411, uint256S("0x4f6de194bd2f4580e2ac9337289c7cca348d3f35c9079af2760b288315b82feb")},
+                {2124270, uint256S("0x4f6de194bd2f4580e2ac9337289c7cca348d3f35c9079af2760b288315b82feb")},
+                {2745916, uint256S("0x500bc433505075faa45c3dae1eb9d247fef513015573123e41b54abedf30c8d9")},
+                {3275900, uint256S("0xe29c854a0a54ac2c3f6b97e0416a0a7f17df6f80ecf4fa6eb3faa7ec1fceffb6")},
             }
         };
 
