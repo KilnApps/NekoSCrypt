@@ -47,7 +47,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "electrek 24/Nov/2021 Tesla (TSLA) sends ultimatum to buyers who keep devlaying deliveries";
+    const char* pszTimestamp = "Bloomberg 1/Dec/2021 South African Scientists Sound Caution on Omicron Case Severity";
     const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -77,7 +77,7 @@ public:
         consensus.nRuleChangeActivationThreshold = 15120; // 75% of 20160
         consensus.nMinerConfirmationWindow = 20160;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1637808495; // November 24, 2021
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1638410635; // December 1, 2021
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1672462800; // December 31, 2022
 
         // The best chain should have at least this much work.
@@ -114,7 +114,7 @@ public:
         consensus.nTimeLimit = 2236032;
         consensus.nNeoScryptFork = 1414346265;
 
-        genesis = CreateGenesisBlock(1637808495, 1223000, 0x1e0ffff0, 1, 100 * COIN);
+        genesis = CreateGenesisBlock(1638410635, 884508, 0x1e0ffff0, 1, 100 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         
         // assert(consensus.hashGenesisBlock == uint256S("0xe8df435b636e9a8605500fa8c887d6d3d203cb669ff7327fdcce18b7d6cff02b"));
@@ -148,24 +148,24 @@ public:
 
         checkpointData = {
             {
-                // {  0, uint256S("0xe8df435b636e9a8605500fa8c887d6d3d203cb669ff7327fdcce18b7d6cff02b")},
-                {  31846, uint256S("0xba7d5c0e6d46f6448253290ce037e13975c13ca9c375ae854b6b2f85044fc0f9")},
-                {  41300, uint256S("0x8c4e02f6c0d20e856fd7e952a147fee30ce145ca6932a284f354924362d2b408")},
-                { 500000, uint256S("0x2b7ea20e3899deb9591015b0a5a589b9f6032ab82e018014fafe11637b1a2daf")},
-                {1000000, uint256S("0xb9e03dffe6b43cac38191d1bbb0d74fec21223e0de052928c96f498ba305f918")},
-                {1593400, uint256S("0xe97230c788e7240eb325576810fee62f5162905f63a832f15928b88ac6a938c6")},
-                {1776411, uint256S("0x4f6de194bd2f4580e2ac9337289c7cca348d3f35c9079af2760b288315b82feb")},
-                {2124270, uint256S("0x4f6de194bd2f4580e2ac9337289c7cca348d3f35c9079af2760b288315b82feb")},
-                {2745916, uint256S("0x500bc433505075faa45c3dae1eb9d247fef513015573123e41b54abedf30c8d9")},
-                {3275900, uint256S("0xe29c854a0a54ac2c3f6b97e0416a0a7f17df6f80ecf4fa6eb3faa7ec1fceffb6")},
+                {  0, uint256S("0xe03da9c79859ccc0b6af6bcfd5d1c71d5ce11f74bc7c12f3b83f5b2bc6a2a77f")},
+                // {  31846, uint256S("0xba7d5c0e6d46f6448253290ce037e13975c13ca9c375ae854b6b2f85044fc0f9")},
+                // {  41300, uint256S("0x8c4e02f6c0d20e856fd7e952a147fee30ce145ca6932a284f354924362d2b408")},
+                // { 500000, uint256S("0x2b7ea20e3899deb9591015b0a5a589b9f6032ab82e018014fafe11637b1a2daf")},
+                // {1000000, uint256S("0xb9e03dffe6b43cac38191d1bbb0d74fec21223e0de052928c96f498ba305f918")},
+                // {1593400, uint256S("0xe97230c788e7240eb325576810fee62f5162905f63a832f15928b88ac6a938c6")},
+                // {1776411, uint256S("0x4f6de194bd2f4580e2ac9337289c7cca348d3f35c9079af2760b288315b82feb")},
+                // {2124270, uint256S("0x4f6de194bd2f4580e2ac9337289c7cca348d3f35c9079af2760b288315b82feb")},
+                // {2745916, uint256S("0x500bc433505075faa45c3dae1eb9d247fef513015573123e41b54abedf30c8d9")},
+                // {3275900, uint256S("0xe29c854a0a54ac2c3f6b97e0416a0a7f17df6f80ecf4fa6eb3faa7ec1fceffb6")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data from rpc: getchaintxstats 4096 e29c854a0a54ac2c3f6b97e0416a0a7f17df6f80ecf4fa6eb3faa7ec1fceffb6
-            /* nTime    */ 1596492036,
-            /* nTxCount */ 5601248,
-            /* dTxRate  */ 0.01661463197339783
+            /* nTime    */ 0,
+            /* nTxCount */ 0,
+            /* dTxRate  */ 0
         };
     }
 };
