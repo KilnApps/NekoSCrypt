@@ -91,10 +91,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x41;
-        pchMessageStart[1] = 0x15;
-        pchMessageStart[2] = 0x1a;
-        pchMessageStart[3] = 0x21;
+        pchMessageStart[0] = 0x93;
+        pchMessageStart[1] = 0x91;
+        pchMessageStart[2] = 0xa0;
+        pchMessageStart[3] = 0xf8;
 
         // End of the bridge from old to new pchMessageStart
         pchMessageStartOld[0] = 0xfb;
@@ -149,15 +149,6 @@ public:
         checkpointData = {
             {
                 {  0, uint256S("0xe03da9c79859ccc0b6af6bcfd5d1c71d5ce11f74bc7c12f3b83f5b2bc6a2a77f")},
-                // {  31846, uint256S("0xba7d5c0e6d46f6448253290ce037e13975c13ca9c375ae854b6b2f85044fc0f9")},
-                // {  41300, uint256S("0x8c4e02f6c0d20e856fd7e952a147fee30ce145ca6932a284f354924362d2b408")},
-                // { 500000, uint256S("0x2b7ea20e3899deb9591015b0a5a589b9f6032ab82e018014fafe11637b1a2daf")},
-                // {1000000, uint256S("0xb9e03dffe6b43cac38191d1bbb0d74fec21223e0de052928c96f498ba305f918")},
-                // {1593400, uint256S("0xe97230c788e7240eb325576810fee62f5162905f63a832f15928b88ac6a938c6")},
-                // {1776411, uint256S("0x4f6de194bd2f4580e2ac9337289c7cca348d3f35c9079af2760b288315b82feb")},
-                // {2124270, uint256S("0x4f6de194bd2f4580e2ac9337289c7cca348d3f35c9079af2760b288315b82feb")},
-                // {2745916, uint256S("0x500bc433505075faa45c3dae1eb9d247fef513015573123e41b54abedf30c8d9")},
-                // {3275900, uint256S("0xe29c854a0a54ac2c3f6b97e0416a0a7f17df6f80ecf4fa6eb3faa7ec1fceffb6")},
             }
         };
 
@@ -204,10 +195,10 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00"); //1354312
 
-        pchMessageStart[0] = 0x91;
-        pchMessageStart[1] = 0x65;
-        pchMessageStart[2] = 0x6a;
-        pchMessageStart[3] = 0x71;
+        pchMessageStart[0] = 0xcb;
+        pchMessageStart[1] = 0xb9;
+        pchMessageStart[2] = 0x98;
+        pchMessageStart[3] = 0xe5;
 
         pchMessageStartOld[0] = 0xda;
         pchMessageStartOld[1] = 0xaf;
@@ -242,13 +233,13 @@ public:
         vSeeds.emplace_back("testnet-explorer2.feathercoin.com");
         vSeeds.emplace_back("testnet-dnsseed.feathercoin.com");
         */
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,112);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,197);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,240);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        bech32_hrp = "tf";
+        bech32_hrp = "nst";
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
@@ -259,7 +250,7 @@ public:
 
         checkpointData = {
             {
-                {546, uint256S("c889c0fb27bf7c669cff1cf9407f768cde2a084e1dc527baa6dadbed9b22bf29")},
+                
             }
         };
 
@@ -306,10 +297,10 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00");
 
-        pchMessageStart[0] = 0xd1;
-        pchMessageStart[1] = 0xa5;
-        pchMessageStart[2] = 0xaa;
-        pchMessageStart[3] = 0xb1;
+        pchMessageStart[0] = 0xa5;
+        pchMessageStart[1] = 0xdb;
+        pchMessageStart[2] = 0xd9;
+        pchMessageStart[3] = 0xfe;
 
         pchMessageStartOld[0] = 0xda;
         pchMessageStartOld[1] = 0xaf;
@@ -347,7 +338,7 @@ public:
 
         checkpointData = {
             {
-                {0, uint256S("c797e583cd93b97b1370a687519606abebd2b84fc4294b0e7584f59187e23ebb")},
+                
             }
         };
 
@@ -357,13 +348,13 @@ public:
             0
         };
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,34);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,35);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,36);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        bech32_hrp = "fcrt";
+        bech32_hrp = "nsrt";
     }
 
     /**
